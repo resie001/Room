@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Latihan Room</string>
+    <string name="masukkan_nim">Masukkan NIM</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="masukkan_kelas">Masukkan Kelas</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="insert">Insert</string>
+</resources>

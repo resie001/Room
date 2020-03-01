@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/ed_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/masukkan_nama"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/ed_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/masukkan_nim"
+        android:importantForAutofill="no"
+        android:layout_below="@id/ed_nama"/>
+
+    <EditText
+        android:id="@+id/ed_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/masukkan_kelas"
+        android:importantForAutofill="no"
+        android:layout_below="@id/ed_nim"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_below="@id/ed_kelas"
+        android:layout_toEndOf="@id/view"
+        android:layout_margin="8dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_below="@id/ed_kelas"
+        android:layout_toStartOf="@id/view"
+        android:layout_margin="8dp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ed_kelas"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert"
+        android:layout_below="@id/ed_kelas"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
